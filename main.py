@@ -14,6 +14,7 @@ class Node:
 
 
 def main():
+    # Create nodes and initialize the tree
     a = Node('a')
     b = Node('b')
     c = Node('c')
@@ -21,14 +22,20 @@ def main():
     e = Node('e')
     f = Node('f')
     g = Node('g')
+    h = Node('h')
+    i = Node('i')
+    j = Node('j')
 
-    # Initialize the tree
+    # Initialize the tree structure
     a.left = b
-    a.right = c
     b.left = d
     b.right = e
+    e.left = g
+    e.right = h
+    a.right = c
     c.left = f
-    c.right = g
+    f.left = i
+    i.right = j
 
     # Traverse and print the tree
     a.traverse()
